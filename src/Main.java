@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Задача 2");
         int OS = 1;
         int yearOfProduction = 2023;
-        DownloadApp(OS, yearOfProduction);
+        downloadApp(OS, yearOfProduction);
         System.out.println("Задача 3");
         int deliveryDays = 0;
         int deliveryDistance = 95;
@@ -28,7 +28,7 @@ public class Main {
         }
     }
 
-    public static void DownloadApp(int OS, int yearOfProduction) {
+    public static void downloadApp(int OS, int yearOfProduction) {
         int currentYear = LocalDate.now().getYear();
         if (yearOfProduction < currentYear && OS == 0) {
             System.out.println("Скачайте облегчённую версию для iOS");
